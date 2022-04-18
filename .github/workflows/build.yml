@@ -88,6 +88,6 @@ jobs:
       
       - name: Combine two images
         run: |
-          docker manifest create knatnetwork/clickhouse:${{ github.event.inputs.clickhouse-version }} --amend knatnetwork/clickhouse-amd64:${{ github.event.inputs.clickhouse-version }} --amend knatnetwork/clickhouse-arm64:${{ github.event.inputs.clickhouse-version }}
+          docker manifest create knatnetwork/clickhouse-server:${{ github.event.inputs.clickhouse-version }} --amend knatnetwork/clickhouse-amd64:${{ github.event.inputs.clickhouse-version }} --amend knatnetwork/clickhouse-arm64:${{ github.event.inputs.clickhouse-version }}
 
-          docker manifest push knatnetwork/clickhouse:${{ github.event.inputs.clickhouse-version }}
+          docker manifest push knatnetwork/clickhouse-server:${{ github.event.inputs.clickhouse-version }}
