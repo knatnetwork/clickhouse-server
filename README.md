@@ -17,7 +17,7 @@ Currently, tags before v21.7.x cannot be built on ARM64, thus the earliest tag i
 If you wish to build locally, you should do the following steps:
 
 ```bash
-git clone https://github.com/knatnetwork/clickhouse.git
+git clone https://github.com/knatnetwork/clickhouse-server.git
 cd clickhouse
 cd ClickHouse && git checkout v<TAG_NAME> && git submodule update --init --recursive
 cd ..
