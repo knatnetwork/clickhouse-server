@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-arm64-image:
-    name: Build ARM64 Image
+    name: Build v${{ github.event.inputs.clickhouse-version }} ARM64 Image
     runs-on: [self-hosted,arm64]
     steps:
       - uses: actions/checkout@v3
@@ -43,7 +43,7 @@ jobs:
 
 
   build-amd64-image:
-    name: Build AMD64 Image
+    name: Build v${{ github.event.inputs.clickhouse-version }} AMD64 Image
     runs-on: [self-hosted,amd64]
     steps:
       - uses: actions/checkout@v3
